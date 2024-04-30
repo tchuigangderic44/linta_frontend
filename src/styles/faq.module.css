@@ -1,0 +1,26 @@
+.faq-wrapper {
+  margin-top: 40px;
+}
+.faq-ctn {
+  width: 65%;
+  @media screen and (max-width: 935px) {
+    width: 100%;
+  }
+}
+.form-ctn {
+  width: 30%;
+  padding: 0 20px;
+  background: #fbf4ce;
+  border-radius: 10px;
+  position: sticky;
+  top: calc(var(--header-height) + 50px);
+  input,
+  textarea {
+    outline: none;
+    border: 1px solid #f8e992;
+    padding: 5px 10px;
+  }
+  @media screen and (max-width: 935px) {
+    width: 100%;
+  }
+}

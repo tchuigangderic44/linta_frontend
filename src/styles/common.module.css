@@ -1,0 +1,15 @@
+.breadcrump {
+  color: gray;
+  .b-link {
+    color: inherit;
+    font-size: 1.2em;
+    &:last-of-type,
+    &:hover {
+      color: var(--primary-color) !important;
+    }
+  }
+
+  @media screen and (max-width: 830px) {
+    display: none;
+  }
+}

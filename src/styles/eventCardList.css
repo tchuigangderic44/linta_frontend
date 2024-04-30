@@ -1,0 +1,24 @@
+.fselect,
+.filterLink {
+  width: 120px;
+  font-weight: bold !important;
+}
+
+.filterLink {
+  padding: 10px;
+  color: var(--secondary-color) !important;
+  text-align: center;
+}
+
+.filterLink:hover,
+.fselect:hover {
+  text-decoration: none;
+  color: var(--primary-color) !important;
+}
+
+.fselect {
+  text-decoration: none;
+  color: var(--primary-color) !important;
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color) !important;
+}

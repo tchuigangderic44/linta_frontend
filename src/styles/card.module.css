@@ -1,0 +1,20 @@
+.card-element {
+  width: 32%;
+  @media screen and (max-width: 1035px) {
+    width: 31%;
+  }
+  @media screen and (max-width: 825px) {
+    width: 32%;
+  }
+  @media screen and (max-width: 715px) {
+    width: 49%;
+  }
+  @media screen and (max-width: 535px) {
+    width: 100%;
+  }
+  .t-card {
+    @media screen and (max-width: 400px) {
+      display: none;
+    }
+  }
+}

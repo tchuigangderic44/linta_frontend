@@ -1,0 +1,129 @@
+user:
+  /auth/new-user:
+    action: create user account
+    type: post
+    body: 
+      email: string
+      firstName: string
+      lastName: string
+      password: string
+      phoneNumber: string
+  /auth/client/login:
+    action: login user
+    type: post
+    body:
+      phoneNumber: string
+      password: string
+  /auth/logout:
+    action: logout user
+    type: post
+    body:
+  /user/update-profile:
+    action: update user profile
+    type: post
+    body:
+      age: string 
+      avatar: string
+      firstName: string
+      lastName: string
+  /auth/change-password:
+    action: change user password
+    type: post 
+    body:
+      oldPassword: string
+      newPassword: string
+  
+product:
+  /product/all: 
+    action: get paginate products 
+    type: get 
+    response[]:
+      category: string
+      date: date 
+      description: string 
+      name: string 
+      id: string 
+      images: string 
+      unitPrice: string 
+  /product/search:
+    action: search product by name
+    type: post 
+    body: 
+      name: string 
+    response[]:
+      description: string
+      id: string
+      name: string
+      unitPrice: double
+  /product/infos:
+    action: get single product infos
+    type: get 
+    response:
+      id: string
+      name: string
+      description: string
+      unitPrice: double
+
+order:
+  /order/new:
+    action: create new order 
+    type: post 
+    body:
+      products[]:
+        id: string
+        quantity: double 
+        duration: double 
+    response:
+      message: string fr and en
+  /order/infos: 
+    action: get order by id 
+    type: get 
+    response: 
+      code: string
+      orderAmount: double
+      status: string
+      products[]:
+        category: string 
+        description: string
+        duration: double
+        images: string
+        name: string
+        price: double
+        quantity: double
+  /order/history:
+    action: get user order history 
+    type: get 
+    response[]: 
+      avatar: string
+      code: string
+      date: date
+      firstName: string
+      lastName: string
+      id: string
+      status: string
+  /order/filter:
+    action: filter order by code and status 
+    type: get 
+    body: 
+      code: string
+      status: string
+      response[]:
+        avatar: string
+        code: string
+        date: date
+        firstName: string
+        lastName: string
+        id: string
+        status: string
+        
+quick_order:
+  /quick_order/new:
+    action: add new quick_order
+    type: post 
+    body: 
+      name: string
+      quantity: double
+      period: string
+      phoneNumber: string
+  
+

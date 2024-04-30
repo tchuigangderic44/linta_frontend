@@ -1,0 +1,55 @@
+.navBarSearch,
+.navbar {
+  width: 100%;
+  height: 56px;
+  background-color: var(--content-color);
+  border-bottom: 1px solid #ededed;
+  position: sticky;
+  top: var(--header-height);
+  z-index: 5;
+  .iconMobileHide {
+    visibility: visible;
+  }
+  @media screen and (max-width: 880px) {
+    .iconMobileHide {
+      visibility: hidden;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    padding: 0 var(--min-padding-space);
+  }
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+}
+.nav-hidden{
+  display: none;
+}
+
+.navBarSearch {
+  display: none;
+  @media screen and (max-width: 575px) {
+    display: block;
+  }
+}
+.navcontent {
+  max-width: var(--max-width-content);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.defaultBtn {
+  font-size: small;
+}
+
+.chevronClass {
+  transition: transform 150ms ease;
+  transform: rotate(0deg);
+
+  [data-expanded] & {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,29 @@
+.account-info,.box-data{
+   @media screen and (max-width:578px) {
+      width: 100%;
+    }
+}
+.order-details-wrapper {
+  .icon-black-path {
+    path {
+      stroke: black;
+    }
+  }
+  .overview-box {
+    border: 1px solid var(--mantine-color-yellow-4);
+    padding: 10px;
+    background-color: var(--mantine-color-yellow-1);
+    background-color: color-mix(
+      in srgb,
+      var(--mantine-color-yellow-1) 80%,
+      white 100%
+    );
+  }
+}
+.icon-orange-path {
+  fill: var(--mantine-color-orange-6);
+  path {
+    stroke: var(--mantine-color-orange-6);
+    fill: var(--mantine-color-orange-6);
+  }
+}

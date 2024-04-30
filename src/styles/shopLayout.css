@@ -1,0 +1,10 @@
+.catLink,
+.Link {
+  font-size: 1.2em;
+  color: rgba(139, 150, 165, 1);
+}
+
+.catLink:hover,
+.Link:hover {
+  color: var(--primary-color) !important;
+}

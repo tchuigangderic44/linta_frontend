@@ -1,0 +1,126 @@
+.wrap-info-product {
+  background-color: white;
+  border: 1px solid #dee2e7;
+  padding: 10px;
+  border-radius: 6px;
+  @media only screen and (max-width: 830px) {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  @media only screen and (max-width: 530px) {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.wrapper-ctn {
+  background-color: white;
+  border: 1px solid #dee2e7;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.wrapper {
+  @media only screen and (max-width: 530px) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.product-preview {
+  order: 1;
+  width: 35%;
+  .product-preview-img-ctn {
+    height: 380px;
+  }
+  @media screen and (max-width: 950px) {
+    width: 30%;
+  }
+  @media screen and (max-width: 800px) {
+    width: 65%;
+  }
+  @media screen and (max-width: 530px) {
+    width: 100%;
+    .product-preview-img-ctn {
+      height: 230px;
+    }
+  }
+}
+.product-preview-list {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .btn-wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    right: 0;
+  }
+  .btnBack {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    z-index: 2;
+  }
+  .btr,
+  .btnBack,
+  .btl {
+    path {
+      fill: white !important;
+    }
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .btr svg,
+  .btnBack {
+    transform: rotate(180deg);
+  }
+}
+.product-info {
+  width: 35%;
+  order: 2;
+  .product-name {
+    font-size: 1.3em;
+  }
+  @media screen and (max-width: 800px) {
+    order: 3;
+    width: 65%;
+  }
+  @media screen and (max-width: 530px) {
+    width: 100%;
+    .product-name {
+      font-size: var(--mantine-font-size-md);
+    }
+  }
+}
+.product-quantity {
+  width: 25%;
+  order: 3;
+  position: sticky;
+  top: calc(var(--header-height) + 65px);
+  @media screen and (max-width: 950px) {
+    width: 30%;
+  }
+  @media screen and (max-width: 800px) {
+    order: 2;
+    width: 33.9%;
+  }
+  @media screen and (max-width: 575px) {
+    top: calc(var(--header-height) + 5px);
+  }
+  @media screen and (max-width: 530px) {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  .thumbmails-ctn {
+    display: none;
+  }
+}
+
+/*.viewProductContainer {
+  width: 100%;
+}
+.thumb {
+  cursor: pointer;
+}
+*/

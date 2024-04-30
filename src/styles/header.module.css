@@ -1,0 +1,68 @@
+.header {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--content-color);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid #ededed;
+  @media only screen and (max-width: 1200px) {
+    padding: 0 var(--min-padding-space);
+  }
+  .navLinkMobile {
+    display: none;
+  }
+
+  .navDrawerMobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 880px) {
+    .navDesktop {
+      display: none;
+    }
+    .navDrawerMobile {
+      display: block;
+    }
+    .navLinkMobile {
+      display: flex;
+    }
+  }
+}
+
+.search input {
+  transition: none;
+  font-family: inherit;
+  border-color: var(--link-color);
+  padding: 10px;
+  transition: 0.8s width;
+  &:focus-within {
+    outline: rem(2px) solid var(--link-color) !important;
+    border-color: transparent;
+  }
+}
+
+.search input::placeholder {
+  color: var(--link-color);
+  font-family: Lato, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+
+.linkHeader {
+  /*font-weight: 800;*/
+  text-transform: uppercase;
+  font-family: Lato, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: 0.5s;
+}
+
+.linkHeader:hover {
+  color: var(--primary-color);
+}
+
+.linkHeader[aria-current="page"] {
+  color: var(--primary-color);
+}

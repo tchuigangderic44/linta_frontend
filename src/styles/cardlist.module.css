@@ -1,0 +1,23 @@
+.description {
+  margin: 0;
+}
+.ctn-card {
+  .title {
+    white-space: nowrap;
+  }
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card-element-proprety {
+  background-color: var(--content-color);
+  border: 1px solid #e0e0e0;
+  padding: 17px 18px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 0px rgba(146, 143, 143, 0.25);
+  @media screen and (max-width: 500px) {
+    padding: 5px;
+  }
+}

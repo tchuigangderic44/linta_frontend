@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #6a71f1;
+  --secondary-color: #000000;
+  --ternary-color: #f39090;
+  --link-color: #60707a;
+  --header-height: 70px;
+  --content-color: white;
+  --bg-color: #f7fafc;
+  --max-width-content: 1200px;
+  --min-padding-space: 10px;
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff;
+  --mantine-color-yellow-filled: var(--mantine-color-yellow-6) !important;
+  --mantine-color-gray-filled: var(--mantine-color-gray-6) !important;
+  --mantine-color-orange-filled: var(--mantine-color-orange-6) !important;
+  --mantine-color-green-filled: var(--mantine-color-green-6) !important;
+  --mantine-color-red-filled: var(--mantine-color-red-6) !important;
+  @media only screen and (max-width: 350px) {
+    --header-height: 50px !important;
+  }
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Public";
+  src: url("./assets/fonts/PublicSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Lato", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-weight: lighter;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.brandLink {
+  color: var(--secondary-color);
+}
+
+.brandLabel {
+  color: var(--primary-color);
+}
+
+.active-element {
+  transform: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+.logoAnimation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: 100dvh;
+}
+.mantine-Stepper-separator[data-active="true"] {
+  background-color: var(--mantine-color-orange-6);
+}
+.mantine-Stepper-step .mantine-Stepper-stepLabel {
+  opacity: 0.5;
+}
+.mantine-Stepper-step[data-progress="true"] .mantine-Stepper-stepLabel {
+  opacity: 1;
+}
+.mantine-Stepper-step[data-completed="true"] .mantine-Stepper-stepLabel {
+  opacity: 1;
+}
+.mantine-Stepper-separator {
+  background-color: var(--mantine-color-orange-2);
+}
+
+/*
+
+
+input[type="date"] {
+  font-family: Lato, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+input {
+  transition: none;
+  font-family: inherit;
+  &:focus-within {
+    outline: rem(1px) solid var(--primary-color) !important;
+    border-color: transparent;
+  }
+}
+.m-8fb7ebe7 {
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: inherit;
+  font-family: Lato, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+button:active {
+  
+}
+
+
+
+*/
